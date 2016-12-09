@@ -10,6 +10,10 @@
 		8FB70CFE1DFAA0F90009CBF9 /* Calendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB70CF41DFAA0F90009CBF9 /* Calendar.framework */; };
 		8FB70D031DFAA0F90009CBF9 /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D021DFAA0F90009CBF9 /* CalendarTests.swift */; };
 		8FB70D051DFAA0F90009CBF9 /* Calendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB70CF71DFAA0F90009CBF9 /* Calendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FB70D0F1DFAA1170009CBF9 /* DateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D0E1DFAA1170009CBF9 /* DateComponent.swift */; };
+		8FB70D111DFAA1300009CBF9 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D101DFAA1300009CBF9 /* Calendar.swift */; };
+		8FB70D131DFAA9FF0009CBF9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D121DFAA9FF0009CBF9 /* Date.swift */; };
+		8FB70D151DFAAAEF0009CBF9 /* Calendar+Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D141DFAAAEF0009CBF9 /* Calendar+Component.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		8FB70CFD1DFAA0F90009CBF9 /* CalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB70D021DFAA0F90009CBF9 /* CalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTests.swift; sourceTree = "<group>"; };
 		8FB70D041DFAA0F90009CBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB70D0E1DFAA1170009CBF9 /* DateComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateComponent.swift; sourceTree = "<group>"; };
+		8FB70D101DFAA1300009CBF9 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		8FB70D121DFAA9FF0009CBF9 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		8FB70D141DFAAAEF0009CBF9 /* Calendar+Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+Component.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				8FB70CF71DFAA0F90009CBF9 /* Calendar.h */,
+				8FB70D0E1DFAA1170009CBF9 /* DateComponent.swift */,
+				8FB70D101DFAA1300009CBF9 /* Calendar.swift */,
+				8FB70D141DFAAAEF0009CBF9 /* Calendar+Component.swift */,
+				8FB70D121DFAA9FF0009CBF9 /* Date.swift */,
 				8FB70CF81DFAA0F90009CBF9 /* Info.plist */,
 			);
 			path = Calendar;
@@ -149,6 +161,7 @@
 					8FB70CF31DFAA0F90009CBF9 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9HQR3Y4WE5;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					8FB70CFC1DFAA0F90009CBF9 = {
@@ -198,6 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB70D0F1DFAA1170009CBF9 /* DateComponent.swift in Sources */,
+				8FB70D111DFAA1300009CBF9 /* Calendar.swift in Sources */,
+				8FB70D131DFAA9FF0009CBF9 /* Date.swift in Sources */,
+				8FB70D151DFAAAEF0009CBF9 /* Calendar+Component.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +339,7 @@
 		8FB70D091DFAA0F90009CBF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
@@ -334,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.silverback-it.Calendar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +360,7 @@
 		8FB70D0A1DFAA0F90009CBF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
@@ -360,6 +380,7 @@
 		8FB70D0C1DFAA0F90009CBF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
 				INFOPLIST_FILE = CalendarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +393,7 @@
 		8FB70D0D1DFAA0F90009CBF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 9HQR3Y4WE5;
 				INFOPLIST_FILE = CalendarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
