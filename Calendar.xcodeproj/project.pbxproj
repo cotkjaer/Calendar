@@ -14,6 +14,7 @@
 		8FB70D111DFAA1300009CBF9 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D101DFAA1300009CBF9 /* Calendar.swift */; };
 		8FB70D131DFAA9FF0009CBF9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D121DFAA9FF0009CBF9 /* Date.swift */; };
 		8FB70D151DFAAAEF0009CBF9 /* Calendar+Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D141DFAAAEF0009CBF9 /* Calendar+Component.swift */; };
+		8FB70D1E1DFAC5F90009CBF9 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D1D1DFAC5F90009CBF9 /* DateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		8FB70D101DFAA1300009CBF9 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		8FB70D121DFAA9FF0009CBF9 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		8FB70D141DFAAAEF0009CBF9 /* Calendar+Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+Component.swift"; sourceTree = "<group>"; };
+		8FB70D1D1DFAC5F90009CBF9 /* DateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB70D021DFAA0F90009CBF9 /* CalendarTests.swift */,
+				8FB70D1D1DFAC5F90009CBF9 /* DateTests.swift */,
 				8FB70D041DFAA0F90009CBF9 /* Info.plist */,
 			);
 			path = CalendarTests;
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB70D031DFAA0F90009CBF9 /* CalendarTests.swift in Sources */,
+				8FB70D1E1DFAC5F90009CBF9 /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
