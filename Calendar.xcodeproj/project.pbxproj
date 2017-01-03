@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F60220E1E1AA2B900C1A95C /* Leap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F60220D1E1AA2B900C1A95C /* Leap.swift */; };
+		8F6022101E1AA2F500C1A95C /* LeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F60220F1E1AA2F500C1A95C /* LeapTests.swift */; };
 		8FB70CFE1DFAA0F90009CBF9 /* Calendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB70CF41DFAA0F90009CBF9 /* Calendar.framework */; };
 		8FB70D031DFAA0F90009CBF9 /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB70D021DFAA0F90009CBF9 /* CalendarTests.swift */; };
 		8FB70D051DFAA0F90009CBF9 /* Calendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB70CF71DFAA0F90009CBF9 /* Calendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F60220D1E1AA2B900C1A95C /* Leap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leap.swift; sourceTree = "<group>"; };
+		8F60220F1E1AA2F500C1A95C /* LeapTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeapTests.swift; sourceTree = "<group>"; };
 		8FB70CF41DFAA0F90009CBF9 /* Calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Calendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB70CF71DFAA0F90009CBF9 /* Calendar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
 		8FB70CF81DFAA0F90009CBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 				8FB70D101DFAA1300009CBF9 /* Calendar.swift */,
 				8FB70D141DFAAAEF0009CBF9 /* Calendar+Component.swift */,
 				8FB70D121DFAA9FF0009CBF9 /* Date.swift */,
+				8F60220D1E1AA2B900C1A95C /* Leap.swift */,
 				8FB70CF81DFAA0F90009CBF9 /* Info.plist */,
 			);
 			path = Calendar;
@@ -96,6 +101,7 @@
 			children = (
 				8FB70D021DFAA0F90009CBF9 /* CalendarTests.swift */,
 				8FB70D1D1DFAC5F90009CBF9 /* DateTests.swift */,
+				8F60220F1E1AA2F500C1A95C /* LeapTests.swift */,
 				8FB70D041DFAA0F90009CBF9 /* Info.plist */,
 			);
 			path = CalendarTests;
@@ -214,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F60220E1E1AA2B900C1A95C /* Leap.swift in Sources */,
 				8FB70D0F1DFAA1170009CBF9 /* DateComponent.swift in Sources */,
 				8FB70D111DFAA1300009CBF9 /* Calendar.swift in Sources */,
 				8FB70D131DFAA9FF0009CBF9 /* Date.swift in Sources */,
@@ -226,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB70D031DFAA0F90009CBF9 /* CalendarTests.swift in Sources */,
+				8F6022101E1AA2F500C1A95C /* LeapTests.swift in Sources */,
 				8FB70D1E1DFAC5F90009CBF9 /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +434,7 @@
 				8FB70D0A1DFAA0F90009CBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FB70D0B1DFAA0F90009CBF9 /* Build configuration list for PBXNativeTarget "CalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +443,7 @@
 				8FB70D0D1DFAA0F90009CBF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
