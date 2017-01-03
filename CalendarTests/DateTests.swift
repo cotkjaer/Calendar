@@ -1,38 +1,49 @@
 //
-//  DateTests.swift
-//  Calendar
+// DateTests.swift
+// Calendar
 //
-//  Created by Christian Otkjær on 09/12/16.
-//  Copyright © 2016 Silverback IT. All rights reserved.
+// Created by Christian Otkjær on 09/12/16.
+// Copyright © 2016 Silverback IT. All rights reserved.
 //
 
 import XCTest
 @testable import Calendar
 
-
 class DateTests: XCTestCase
 {
-    let gregorian =  Calendar(identifier: .gregorian)
-
+    let gregorian = Calendar(identifier: .gregorian)
+    
     func test_count()
     {
-        let date1 = gregorian.date(from: DateComponents(year: 2015, month:  6, day: 14, hour: 22, minute: 39))!
-        let date2 = gregorian.date(from: DateComponents(year: 2016, month:  9, day: 25, hour: 22, minute: 39))!
+        let date1 = gregorian.date(from: DateComponents(year: 2015, month: 6, day: 14, hour: 22, minute: 39))!
+        let date2 = gregorian.date(from: DateComponents(year: 2016, month: 9, day: 25, hour: 22, minute: 39))!
         
         XCTAssertEqual(date2.years(since: date1), 1)
         XCTAssertEqual(date2.months(since: date1), 15)
         XCTAssertEqual(date2.weeks(since: date1), 67)
         XCTAssertEqual(date2.days(since: date1), 469)
         
-        let date3 = gregorian.date(from: DateComponents(year: 2016, month: 10, day:  9, hour: 12, minute: 38))!
+        let date3 = gregorian.date(from: DateComponents(year: 2016, month: 10, day: 9, hour: 12, minute: 38))!
         let date4 = gregorian.date(from: DateComponents(year: 2016, month: 10, day: 10, hour: 15, minute: 36))!
-
+        
         XCTAssertEqual(date4.years(since: date3), 0)
         XCTAssertEqual(date4.months(since: date3), 0)
         XCTAssertEqual(date4.weeks(since: date3), 0)
+        XCTAssertEqual(date4.days(since: date3), 1)
         XCTAssertEqual(date4.hours(since: date3), 26)
         XCTAssertEqual(date4.seconds(since: date3), 97080)
         XCTAssertEqual(date4.seconds(since: date3) * 1000, date4.milliseconds(since: date3))
+        
+        let date5 = gregorian.date(from: DateComponents(year: 2016, month: 10, day: 9, hour: 23, minute: 59))!
+        let date6 = gregorian.date(from: DateComponents(year: 2016, month: 10, day: 10, hour: 0, minute: 1))!
+        
+        XCTAssertEqual(date6.years(since: date5), 0)
+        XCTAssertEqual(date6.months(since: date5), 0)
+        XCTAssertEqual(date6.weeks(since: date5), 0)
+        XCTAssertEqual(date6.days(since: date5), 0)
+        XCTAssertEqual(date6.hours(since: date5), 0)
+        XCTAssertEqual(date6.minutes(since: date5), 2)
+        XCTAssertEqual(date6.seconds(since: date5), 120)
+        XCTAssertEqual(date6.milliseconds(since: date5), 120000)
     }
-    
 }

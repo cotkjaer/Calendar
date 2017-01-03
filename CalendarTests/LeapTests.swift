@@ -42,16 +42,16 @@ class LeapTests: XCTestCase
     
     func test_isLeapYear()
     {
-        XCTAssertTrue(isLeapYear(2004))
-        XCTAssertTrue(isLeapYear(4))
-        XCTAssertTrue(isLeapYear(400))
-        XCTAssertTrue(isLeapYear(444))
-        XCTAssertTrue(isLeapYear(1200))
+        XCTAssertTrue(Gregorian.isLeapYear(2004))
+        XCTAssertTrue(Gregorian.isLeapYear(4))
+        XCTAssertTrue(Gregorian.isLeapYear(400))
+        XCTAssertTrue(Gregorian.isLeapYear(444))
+        XCTAssertTrue(Gregorian.isLeapYear(1200))
         
-        XCTAssertFalse(isLeapYear(0))
-        XCTAssertFalse(isLeapYear(-4))
-        XCTAssertFalse(isLeapYear(1969))
-        XCTAssertFalse(isLeapYear(1900))
-        XCTAssertFalse(isLeapYear(100))
+        XCTAssertFalse(Gregorian.isLeapYear(0))
+        XCTAssertFalse(Gregorian.isLeapYear(-4))
+        XCTAssertFalse(Gregorian.isLeapYear(1969))
+        XCTAssertFalse(Gregorian.isLeapYear(1900))
+        XCTAssertFalse(Gregorian.isLeapYear(100))
     }
 }

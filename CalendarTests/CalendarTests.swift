@@ -1,9 +1,9 @@
 //
-//  CalendarTests.swift
-//  CalendarTests
+// CalendarTests.swift
+// CalendarTests
 //
-//  Created by Christian Otkjær on 09/12/16.
-//  Copyright © 2016 Silverback IT. All rights reserved.
+// Created by Christian Otkjær on 09/12/16.
+// Copyright © 2016 Silverback IT. All rights reserved.
 //
 
 import XCTest
